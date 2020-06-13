@@ -65,7 +65,10 @@ a:active{
 	transition: opacity .01s ease-in;
 }
 
-/* Search box opacities */
+/* Search boxes */
+input{
+	text-align: center;
+}
 #youtube{
 	opacity:0;
 }
