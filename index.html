@@ -16,10 +16,6 @@
 				<input type="text" name="q" autocomplete="off" size="15" value="">
 			</form>
 
-			<form id="chan" action="javascript:attach()" >
-				<input id="board" type="text" spellcheck="false" autocomplete="off" size="5" onkeydown="enter(this)" >
-			</form>
-
 			<div class="child" >
 				<h3 class="title" >Video Stuff</h3>
 				<a href="https://www.youtube.com/">Youtube</a><br>
@@ -45,6 +41,20 @@
 				<a href="https://www.windy.com/?50.983,-1.412,9,m:e37af6N">Weather</a><br>
 				<a href="https://mail.google.com/mail/u/1/#inbox">Email</a><br>
 				<a href="https://mail.google.com/mail/u/0/#inbox">Spam</a><br>
+			</div>
+
+			<div class="child" >
+				<h3 class="title" >Search</h3>
+				<a href="https://rarbgmirror.com/torrents.php?order=seeders&by=DESC">Torrent</a><br>
+				<form id="youtube" method="get" action="https://www.youtube.com/results?search_query=">
+					<input type="text" autocomplete="off" spellcheck="false" name="q" size="10" value="">
+				</form>
+				<form id="twitch" method="get" action="https://www.twitch.com/search?">
+					<input type="text" autocomplete="off" spellcheck="false" name="term" size="10" value="">
+				</form>
+				<form id="chan" action="javascript:attach()" >
+					<input id="board" type="text" spellcheck="false" autocomplete="off" size="5" onkeydown="enter(this)" >
+				</form>
 			</div>
 
 		</div>
