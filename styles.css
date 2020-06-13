@@ -81,6 +81,12 @@ a:active{
 .child:hover #youtube{
 	opacity:1;
 }
+#twitch{
+	opacity: 0;
+}
+.child:hover #twitch{
+	opacity:1;
+}
 
 .child h3{
 	opacity:1;
