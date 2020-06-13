@@ -34,9 +34,6 @@ body{
 #search{
 	opacity:0.7;
 }
-#chan{
-	opacity:0.7;
-}
 
 a{
 	font-size: 17px;
@@ -86,6 +83,12 @@ a:active{
 }
 .child:hover #twitch{
 	opacity:1;
+}
+#chan{
+	opacity:0.7;
+}
+.child:hover #chan{
+	opacity: 1;
 }
 
 .child h3{
