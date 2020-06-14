@@ -90,7 +90,7 @@ input{
 #stats{
 	opacity:0;
 }
-.child:hover #sats{
+.child:hover #stats{
 	opacity: 1;
 }
 .child h3{
