@@ -106,8 +106,8 @@ input{
 	0%{
 		opacity:0;
 	}
-	99%{
-		opacity:0;
+	50%{
+		opacity:0.5;
 	}
 	100%{
 		Opacity:1;
