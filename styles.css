@@ -55,8 +55,8 @@ a:active{
 
 .child a{
 	opacity:0;
-	animation:fade 3s linear;
-	/* transition: opacity 2s ease-in; */
+	/* animation:fade 3s linear; */
+	transition: opacity 2s ease-in;
 	font-size:19px;
 }
 .child:hover a{
@@ -106,8 +106,8 @@ input{
 	0%{
 		opacity:0;
 	}
-	50%{
-		opacity:0.5;
+	99%{
+		opacity:0;
 	}
 	100%{
 		Opacity:1;
