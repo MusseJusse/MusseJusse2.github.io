@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" href="pix/home.png">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<title>Startpage</title>
 	</head>
-	<body onload="startTime()">
+	<body >
 
 		<div id="wrap" align="center">
 
@@ -49,82 +48,94 @@
 				</form>
 			</div>
 
+			<div class="child" >
+				<h3 class="title">Useful 2</h3>
+				<a href="https://www.tweetdeck.com">Twitter</a><br>
+				<a href="https://www.hltv.org">HLTV</a><br>
+				<a href="https://streamable.com">Streamable</a><br>
+			</div>
+
+			<div class="child" >
+				<h3 class="title">Faceit</h3>
+				<a href="https://www.faceit.com/en">Faceit</a><br>
+				<a href="https://www.faceit-stats.me/?user=MusseJusse">Stats</a><br>
+			</div>
+
 		</div>
 
 		<script>
 				
 			var chan = document.getElementById("chan");
-var board = "";
+			var board = "";
 
-function enter(input){
-	if(event.key === 'Enter'){
-		board = input.value;
-	}
-}
+			function enter(input){
+				if(event.key === 'Enter'){
+					board = input.value;
+				}
+			}
 
-function attach(){
-	var together = "https://boards.4channel.org/"+board+"/catalog";
-	window.location = together;
-	board.value="";
-}
+			function attach(){
+				var together = "https://boards.4channel.org/"+board+"/catalog";
+				window.location = together;
+				board.value="";
+			}
 
-///////////////////////////////////////////////////////////////////////////////////////
-// Box title fadeback on mouse leave animations, canceled when mosue moves back in
-// "mouseout" would be applicable if I wanted the (div) element's 'children' included
-// I use reset_animation to allow animation to happen multiple times and also
-// 	to 'cancel' the animation if you were to move mouse out and back in of box
-///////////////////////////////////////////////////////////////////////////////////////
+			///////////////////////////////////////////////////////////////////////////////////////
+			// Box title fadeback on mouse leave animations, canceled when mosue moves back in
+			// "mouseout" would be applicable if I wanted the (div) element's 'children' included
+			// I use reset_animation to allow animation to happen multiple times and also
+			// 	to 'cancel' the animation if you were to move mouse out and back in of box
+			///////////////////////////////////////////////////////////////////////////////////////
 
-var div = document.querySelectorAll("div");
-var title = document.getElementsByClassName("title");
+			var div = document.querySelectorAll("div");
+			var title = document.getElementsByClassName("title");
 
-function reset_animation(i) {
-	title[i].style.animation = "none";
-	title[i].style.animation = null;
-}
+			function reset_animation(i) {
+				title[i].style.animation = "none";
+				title[i].style.animation = null;
+			}
 
-function fade_back(i){
-	title[i].style.animation = "fade 2.3s linear";
-	setTimeout(function() {
-		reset_animation(i)
-    	}, 2300 );
-}
+			function fade_back(i){
+				title[i].style.animation = "fade 2.3s linear";
+				setTimeout(function() {
+					reset_animation(i)
+					}, 2300 );
+			}
 
-div[1].addEventListener("mouseleave",function(){
-	fade_back(0);
-});
-div[1].addEventListener("mouseover",function(){
-	reset_animation(0);
-});
+			div[1].addEventListener("mouseleave",function(){
+				fade_back(0);
+			});
+			div[1].addEventListener("mouseover",function(){
+				reset_animation(0);
+			});
 
-div[2].addEventListener("mouseleave",function(){
-	fade_back(1);
-});
-div[2].addEventListener("mouseover",function(){
-	reset_animation(1);
-});
+			div[2].addEventListener("mouseleave",function(){
+				fade_back(1);
+			});
+			div[2].addEventListener("mouseover",function(){
+				reset_animation(1);
+			});
 
-div[3].addEventListener("mouseleave",function(){
-	fade_back(2);
-});
-div[3].addEventListener("mouseover",function(){
-	reset_animation(2);
-});
+			div[3].addEventListener("mouseleave",function(){
+				fade_back(2);
+			});
+			div[3].addEventListener("mouseover",function(){
+				reset_animation(2);
+			});
 
-div[4].addEventListener("mouseleave",function(){
-	fade_back(3);
-});
-div[4].addEventListener("mouseover",function(){
-	reset_animation(3);
-});
+			div[4].addEventListener("mouseleave",function(){
+				fade_back(3);
+			});
+			div[4].addEventListener("mouseover",function(){
+				reset_animation(3);
+			});
 
-div[5].addEventListener("mouseleave",function(){
-	fade_back(4);
-});
-div[5].addEventListener("mouseover",function(){
-	reset_animation(4);
-});
-			
+			div[5].addEventListener("mouseleave",function(){
+				fade_back(4);
+			});
+			div[5].addEventListener("mouseover",function(){
+				reset_animation(4);
+			});		
 
 		</script>
 	</body>
