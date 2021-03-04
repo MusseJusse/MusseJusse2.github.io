@@ -1,143 +1,38 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<title>Startpage</title>
-	</head>
-	<body >
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
 
-		<div id="wrap" align="center">
+</head>
+<body>
 
-			<h1 id="clock"></h1>
+<div class="crossfade">
+    <figure></figure>
+    <figure></figure>
+    <figure></figure>
+    <figure></figure>
+</div>
 
-			<form id="googlesearch" method="get" action="https://www.google.com/search">
-				<input type="text" autofocus placeholder="google" name="q" autocomplete="off" size="15" value="">
-			</form>
-
-			<div class="child" >
-				<h3 class="title" >Videos</h3>
-				<a href="https://www.youtube.com/">Youtube</a><br>
-				<a href="https://www.twitch.tv/">Twitch</a><br>
-				<a href="https://app.plex.tv/desktop">Plex</a><br>
-			</div>
-
-			<div class="child" >
-				<h3 class="title">Useful</h3>
-				<a href="https://www.tweetdeck.com">Twitter</a><br>
-				<a href="https://www.hltv.org">HLTV</a><br>
-				<a href="https://streamable.com">Streamable</a><br>
-			</div>
-
-			<div class="child" >
-				<h3 class="title" >Useful 2</h3>
-				<a href="https://rarbgmirror.com/torrents.php?order=seeders&by=DESC">Torrent</a><br>
-				<a href="https://mail.google.com/mail/u/1/#inbox">Email</a><br>
-				<a href="https://mail.google.com/mail/u/0/#inbox">Spam</a><br>
-			</div>
-
-			<div class="child" >
-				<h3 class="title" >Search</h3>
-				<form id="youtube" method="get" action="https://www.youtube.com/results?search_query=">
-					<input type="text" placeholder="youtube" autocomplete="off" spellcheck="false" name="q" size="10" value="">
-				</form>
-				<form id="twitch" method="get" action="https://www.twitch.com/search?">
-					<input type="text" placeholder="twitch" autocomplete="off" spellcheck="false" name="term" size="10" value="">
-				</form>
-				<form id="chan" action="javascript:attach()" >
-					<input id="board" type="text" placeholder="chan" spellcheck="false" autocomplete="off" size="5" onkeydown="enter(this)" >
-				</form>
-			</div>
-
-			<div class="child" >
-				<h3 class="title" >Useful 3</h3>
-				<a href="https://www.reddit.com/r/GlobalOffensive">CSGO</a><br>
-				<a href="https://www.amazon.co.uk/">Amazon</a><br>
-				<a href="https://www.nexusmods.com/">Nexus Mods</a><br>
-			</div>
-
-			<div class="child" >
-				<h3 class="title">BU</h3>
-				<a href="https://www.bournemouth.ac.uk/students/log-services">Log In</a><br>
-				<a href="https://timetable.bournemouth.ac.uk/Student/Index#">Timetable</a><br>
-				<a href="https://brightspace.bournemouth.ac.uk/d2l/home">Brightspace</a><br>
-			</div>
-
-		</div>
-
-		<script>
-				
-			var chan = document.getElementById("chan");
-			var board = "";
-
-			function enter(input){
-				if(event.key === 'Enter'){
-					board = input.value;
-				}
-			}
-
-			function attach(){
-				var together = "https://boards.4channel.org/"+board+"/catalog";
-				window.location = together;
-				board.value="";
-			}
-
-			///////////////////////////////////////////////////////////////////////////////////////
-			// Box title fadeback on mouse leave animations, canceled when mosue moves back in
-			// "mouseout" would be applicable if I wanted the (div) element's 'children' included
-			// I use reset_animation to allow animation to happen multiple times and also
-			// 	to 'cancel' the animation if you were to move mouse out and back in of box
-			///////////////////////////////////////////////////////////////////////////////////////
-
-			var div = document.querySelectorAll("div");
-			var title = document.getElementsByClassName("title");
-
-			function reset_animation(i) {
-				title[i].style.animation = "none";
-				title[i].style.animation = null;
-			}
-
-			function fade_back(i){
-				title[i].style.animation = "fade 2.3s linear";
-				setTimeout(function() {
-					reset_animation(i)
-					}, 2300 );
-			}
-
-			div[1].addEventListener("mouseleave",function(){
-				fade_back(0);
-			});
-			div[1].addEventListener("mouseover",function(){
-				reset_animation(0);
-			});
-
-			div[2].addEventListener("mouseleave",function(){
-				fade_back(1);
-			});
-			div[2].addEventListener("mouseover",function(){
-				reset_animation(1);
-			});
-
-			div[3].addEventListener("mouseleave",function(){
-				fade_back(2);
-			});
-			div[3].addEventListener("mouseover",function(){
-				reset_animation(2);
-			});
-
-			div[4].addEventListener("mouseleave",function(){
-				fade_back(3);
-			});
-			div[4].addEventListener("mouseover",function(){
-				reset_animation(3);
-			});
-
-			div[5].addEventListener("mouseleave",function(){
-				fade_back(4);
-			});
-			div[5].addEventListener("mouseover",function(){
-				reset_animation(4);
-			});		
-
-		</script>
-	</body>
-</html>
+<div id="app">
+	<div id="wrapper">
+		<h1 class="glitch" data-text="MUSSEJUSSE">MUSSEJUSSE</h1>
+        <a class="sub" href="https:youtube.com" style="text-decoration: none;"><b>YOUTUBE</b></a>
+        <a class="sub" href="https:twitch.tv" style="text-decoration: none;"><b>TWITCH</b></a>
+        <a class="sub" href="https://app.plex.tv/desktop" style="text-decoration: none;"><b>PLEX</b></a>
+        <br />
+        <a class="sub" href="https://tweetdeck.twitter.com/" style="text-decoration: none;"><b>TWITTER</b></a>
+        <a class="sub" href="https://hltv.org" style="text-decoration: none;"><b>HLTV</b></a>
+        <a class="sub" href="https://rarbgmirror.com/torrents.php?order=seeders&by=DESC" style="text-decoration: none;"><b>TORRENT</b></a>
+        <br />  
+        <a class="sub" href="https://mail.google.com/mail/u/0/#inbox" style="text-decoration: none;"><b>EMAIL</b></a>
+        <a class="sub" href="https://mail.google.com/mail/u/1/#inbox" style="text-decoration: none;"><b>SPAM</b></a>
+        <a class="sub" href="https://www.reddit.com/r/GlobalOffensive/" style="text-decoration: none;"><b>CSGO</b></a>
+        <br />  
+        <a class="sub" href="https://timetable.bournemouth.ac.uk/Student/Index" style="text-decoration: none;"><b>TIMETABLE</b></a>
+        <a class="sub" href="https://brightspace.bournemouth.ac.uk/d2l/home" style="text-decoration: none;"><b>BRIGHTSPACE</b></a>
+    </div>
+</div>
+</body>
