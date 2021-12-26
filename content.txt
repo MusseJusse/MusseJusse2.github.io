@@ -7,6 +7,7 @@ Plex | https://app.plex.tv/desktop/#!/
 Torrents
 RARBG | https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC
 Magnet | https://www.magnetdl.com/download/movies/se/desc/
+Sport | http://strumyk.tv
 
 Reddit
 CSGO | https://reddit.com/r/GlobalOffensive
@@ -18,6 +19,3 @@ Twitter | https://tweetdeck.com
 NAS | http://192.168.68.103:5000
 Reuters | https://reuters.com/world/uk
 HLTV | https://hltv.org
-
-Other
-Sport | http://strumyk.tv/
