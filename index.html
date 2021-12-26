@@ -4,6 +4,7 @@
 <title>Startpage</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="main.css">
+
 <body>
     <div class="bg-image"></div>
     <div class="window-bg">
@@ -12,45 +13,57 @@
             <div id=titleb>Startpage template...</div>
             <div id="clock"></div>
         </div>
-        <div class="windowbackgroundarea1"><div id="Subtitle">Have a nice day.</div></div>
-        <div class="windowbackgroundarea2">
-        <div class="centerDivs">
-            <div class="category">
-                <div class="categorytitle">Media</div>
-                <div class="categorycontent"><a href="https://youtube.com/">Youtube</a> - <a href="https://twitch.tv ">Twitch</a> - <a href="https://floatplane.com ">Floatplane</a> - <a href="https://app.plex.tv/desktop/#!/">Plex</a></div>
-                <div class="categorytitle">Torrents</div>
-                <div class="categorycontent"><a href="https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC">RARBG</a> - <a href="https://www.magnetdl.com/download/movies/se/desc/">Magnet</a> - <a href="http://strumyk.tv">Sports</a></div>
-                <div class="categorytitle">Reddit</div>
-                <div class="categorycontent"><a href="https://reddit.com/r/GlobalOffensive">CSGO</a> - <a href="https://reddit.com/r/RPClipsGTA">GTA</a> - <a href="https://reddit.com/r/LiveStreamFail">LSF</a></div>
-                <div class="categorytitle">Stuff</div>
-                <div class="categorycontent"><a href="https://tweetdeck.com ">Twitter</a> - <a href="http://192.168.68.103:5000">NAS</a> - <a href="https://reuters.com/world/uk">Reuters</a> - <a href="https://hltv.org">HLTV</a></div>
-            </div>
+        <div class="windowbackgroundarea1">
+            <div id="Subtitle">Have a nice day.</div>
         </div>
+        <div class="windowbackgroundarea2">
+            <div class="centerDivs">
+                <div class="category">
+                    <div class="categorytitle">Media</div>
+                    <div class="categorycontent"><a href="https://youtube.com/">Youtube</a> - <a
+                            href="https://twitch.tv ">Twitch</a> - <a href="https://floatplane.com ">Floatplane</a> - <a
+                            href="https://app.plex.tv/desktop/#!/">Plex</a></div>
+                    <div class="categorytitle">Torrents</div>
+                    <div class="categorycontent"><a
+                            href="https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC">RARBG</a>
+                        - <a href="https://www.magnetdl.com/download/movies/se/desc/">Magnet</a> - <a
+                            href="http://strumyk.tv">Sports</a></div>
+                    <div class="categorytitle">Reddit</div>
+                    <div class="categorycontent"><a href="https://reddit.com/r/GlobalOffensive">CSGO</a> - <a
+                            href="https://reddit.com/r/RPClipsGTA">GTA</a> - <a
+                            href="https://reddit.com/r/LiveStreamFail">LSF</a></div>
+                    <div class="categorytitle">Stuff</div>
+                    <div class="categorycontent"><a href="https://tweetdeck.com ">Twitter</a> - <a
+                            href="http://192.168.68.103:5000">NAS</a> - <a
+                            href="https://reuters.com/world/uk">Reuters</a> - <a href="https://hltv.org">HLTV</a></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="pixeloverlay"></div>
     <div class="vignette"></div>
     <script>
-        var clock=document.getElementById("clock");
-        function updateClock(){
-            var date=new Date();
-            date.setHours(date.getHours()+0)
+        var clock = document.getElementById("clock");
+        function updateClock() {
+            var date = new Date();
+            date.setHours(date.getHours() + 0)
             var hours = date.getHours().toString();
             var minutes = date.getMinutes().toString();
             var seconds = date.getSeconds().toString();
-            if (hours.length==1){
-                hours="0"+hours
+            if (hours.length == 1) {
+                hours = "0" + hours
             }
-            if (minutes.length==1){
-                minutes="0"+minutes
+            if (minutes.length == 1) {
+                minutes = "0" + minutes
             }
-            if (seconds.length==1){
-                seconds="0"+seconds
+            if (seconds.length == 1) {
+                seconds = "0" + seconds
             }
-            clock.innerHTML=hours+":"+minutes+":"+seconds;
+            clock.innerHTML = hours + ":" + minutes + ":" + seconds;
         }
         updateClock();
-        setInterval(updateClock,1000);
+        setInterval(updateClock, 1000);
     </script>
-    </body>
-    </html>
+</body>
+
+</html>

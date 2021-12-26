@@ -72,23 +72,23 @@ def makeDoc(data):
     <div class="pixeloverlay"></div>
     <div class="vignette"></div>
     <script>
-        var clock=document.getElementById("clock");
+        var clock = document.getElementById("clock");
         function updateClock(){
-            var date=new Date();
-            date.setHours(date.getHours()+'''+str(hourOffset)+''')
+            var date = new Date();
+            date.setHours(date.getHours() + ''' + str(hourOffset) + ''')
             var hours = date.getHours().toString();
             var minutes = date.getMinutes().toString();
             var seconds = date.getSeconds().toString();
-            if (hours.length==1){
-                hours="0"+hours
+            if (hours.length == 1){
+                hours = "0" + hours
             }
-            if (minutes.length==1){
-                minutes="0"+minutes
+            if (minutes.length == 1){
+                minutes = "0" + minutes
             }
-            if (seconds.length==1){
-                seconds="0"+seconds
+            if (seconds.length == 1){
+                seconds = "0" + seconds
             }
-            clock.innerHTML=hours+":"+minutes+":"+seconds;
+            clock.innerHTML = hours + ":" + minutes + ":" + seconds;
         }
         updateClock();
         setInterval(updateClock,1000);
