@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="css/style.css">
-
-</head>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Startpage</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="main.css">
 <body>
-
-<div class="crossfade">
-    <figure></figure>
-    <figure></figure>
-    <figure></figure>
-    <figure></figure>
-</div>
-
-<div id="app">
-	<div id="wrapper">
-		<h1 class="glitch" data-text="MUSSEJUSSE">MUSSEJUSSE</h1>
-        <a class="sub" href="https://youtube.com" style="text-decoration: none;"><b>YOUTUBE</b></a>
-        <a class="sub" href="https://twitch.tv" style="text-decoration: none;"><b>TWITCH</b></a>
-        <a class="sub" href="https://app.plex.tv/desktop" style="text-decoration: none;"><b>PLEX</b></a>
-        <br />
-        <a class="sub" href="https://tweetdeck.twitter.com/" style="text-decoration: none;"><b>TWITTER</b></a>
-        <a class="sub" href="https://hltv.org" style="text-decoration: none;"><b>HLTV</b></a>
-        <a class="sub" href="https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC" style="text-decoration: none;"><b>TORRENT</b></a>
-        <br />  
-        <a class="sub" href="https://mail.google.com/mail/u/0/#inbox" style="text-decoration: none;"><b>EMAIL</b></a>
-        <a class="sub" href="https://mail.google.com/mail/u/1/#inbox" style="text-decoration: none;"><b>SPAM</b></a>
-        <a class="sub" href="https://www.reddit.com/r/GlobalOffensive/" style="text-decoration: none;"><b>CSGO</b></a>
-        <br />  
-        <a class="sub" href="https://timetable.bournemouth.ac.uk/Student/Index" style="text-decoration: none;"><b>TIMETABLE</b></a>
-        <a class="sub" href="https://brightspace.bournemouth.ac.uk/d2l/home" style="text-decoration: none;"><b>BRIGHTSPACE</b></a>
+    <div class="bg-image"></div>
+    <div class="window-bg">
+        <div class="front-img"></div>
+        <div class="titlediv">
+            <div id=titleb>Startpage template...</div>
+            <div id="clock"></div>
+        </div>
+        <div class="windowbackgroundarea1"><div id="Subtitle">Have a nice day.</div></div>
+        <div class="windowbackgroundarea2">
+        <div class="centerDivs">
+            <div class="category">
+                <div class="categorytitle">Media</div>
+                <div class="categorycontent"><a href="https://youtube.com/">Youtube</a> - <a href="https://twitch.tv ">Twitch</a> - <a href="https://floatplane.com ">Floatplane</a> - <a href="https://app.plex.tv/desktop/#!/">Plex</a></div>
+                <div class="categorytitle">Torrents</div>
+                <div class="categorycontent"><a href="https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC">RARBG</a> - <a href="https://www.magnetdl.com/download/movies/se/desc/">Magnet</a></div>
+                <div class="categorytitle">Reddit</div>
+                <div class="categorycontent"><a href="https://reddit.com/r/GlobalOffensive">CSGO</a> - <a href="https://reddit.com/r/RPClipsGTA">GTA</a> - <a href="https://reddit.com/r/LiveStreamFail">LSF</a></div>
+                <div class="categorytitle">Stuff</div>
+                <div class="categorycontent"><a href="https://tweetdeck.com ">Twitter</a> - <a href="http://192.168.68.103:5000">NAS</a> - <a href="https://reuters.com/world/uk">Reuters</a> - <a href="https://hltv.org">HLTV</a></div>
+            </div>
+        </div>
+        </div>
     </div>
-</div>
-</body>
+    <div class="pixeloverlay"></div>
+    <div class="vignette"></div>
+    <script>
+        var clock=document.getElementById("clock");
+        function updateClock(){
+            var date=new Date();
+            date.setHours(date.getHours()+0)
+            var hours = date.getHours().toString();
+            var minutes = date.getMinutes().toString();
+            var seconds = date.getSeconds().toString();
+            if (hours.length==1){
+                hours="0"+hours
+            }
+            if (minutes.length==1){
+                minutes="0"+minutes
+            }
+            if (seconds.length==1){
+                seconds="0"+seconds
+            }
+            clock.innerHTML=hours+":"+minutes+":"+seconds;
+        }
+        updateClock();
+        setInterval(updateClock,1000);
+    </script>
+    </body>
+    </html>
