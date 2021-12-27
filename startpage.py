@@ -30,7 +30,7 @@ def createHTML(data):
 <title>'''+title+'''</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="main.css">
-<script src="script.js"></script></script>
+<script src="script.js"></script>
 
 <body>
     <p><span>'''+main+'''</span><a href="https://app.netlify.com/sites/mussejusse/overview">startpage</a></p>
