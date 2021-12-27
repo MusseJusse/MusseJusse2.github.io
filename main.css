@@ -1,10 +1,15 @@
 :root {
-    --bgcolour: #f7eee4;
+    --bgcolour1: #f7eee4;
+    --bgcolour2: #f7eee4;
+    --bgcolour3: #f7eee4;
+    --bgcolour4: #f7eee4;
+    --bgcolour5: #f7eee4;
+    --bgcolour6: #f7eee4;
 }
 
 html {
     align-items: center;
-    background-color: var(--bgcolour);
+    background-color: var(--bgcolour1);
     color: #c5c8c6;
     display: flex;
     font: 22px/1 "Inconsolata", monospace;
@@ -30,7 +35,7 @@ p {
 
 p span {
     /* color: #b5bd68; */
-    color: var(--bgcolour);
+    color: var(--bgcolour1);
 }
 
 a {
@@ -57,23 +62,28 @@ nav {
 }
 
 ul:nth-child(5n + 1) li:first-child {
-    color: #a54242;
+    /* color: #a54242; */
+    color: var(--bgcolour2)
 }
 
 ul:nth-child(5n + 2) li:first-child {
-    color: #de935f;
+    /* color: #de935f; */
+    color: var(--bgcolour3)
 }
 
 ul:nth-child(5n + 3) li:first-child {
-    color: #f0c674;
+    /* color: #f0c674; */
+    color: var(--bgcolour4)
 }
 
 ul:nth-child(5n + 4) li:first-child {
-    color: #8c9440;
+    /* color: #8c9440; */
+    color: var(--bgcolour5)
 }
 
 ul:nth-child(5n + 5) li:first-child {
-    color: #85678f;
+    /* color: #85678f; */
+    color: var(--bgcolour6)
 }
 
 li:first-child {
