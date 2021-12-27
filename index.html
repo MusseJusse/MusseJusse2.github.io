@@ -66,4 +66,9 @@
     <p><span>musse@home &gt; </span> <span id="cursor">_</span></p>
 </body>
 
+<script>
+    var randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+    document.documentElement.style.setProperty('--bgcolour', randomColor);
+</script>
+
 </html>
