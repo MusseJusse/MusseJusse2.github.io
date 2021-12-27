@@ -1,69 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Startpage</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="main.css">
+<html>
+<head>
+  <title>user@home > startpage</title>
 
+  <style>
+    html {
+      align-items: center;
+      background-color: #f7eee4;
+      color: #c5c8c6;
+      display: flex;
+      font: 22px/1 "Inconsolata", monospace;
+      height: 100%;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #1d1f21;
+      border-radius: 2px;
+      box-shadow: 1px 1px 6px #1d1f2187;
+      color: #c5c8c6;
+      display: flex;
+      flex-direction: column;
+      min-height: 30ch;
+      min-width: 50vw;
+      padding: 2em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p span {
+      color: #b5bd68;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      column-gap: 2em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 1em 0;
+    }
+
+    ul:nth-child(5n + 1) li:first-child {
+      color: #a54242;
+    }
+
+    ul:nth-child(5n + 2) li:first-child {
+      color: #de935f;
+    }
+    
+    ul:nth-child(5n + 3) li:first-child {
+      color: #f0c674;
+    }
+    
+    ul:nth-child(5n + 4) li:first-child {
+      color: #8c9440;
+    }
+
+    ul:nth-child(5n + 5) li:first-child {
+      color: #85678f;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      margin: 0 0 1em;
+    }
+
+    p #cursor {
+      background-color: #b5bd68;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
 <body>
-    <div class="bg-image"></div>
-    <div class="window-bg">
-        <div class="front-img"></div>
-        <div class="titlediv">
-            <div id=titleb>Startpage template...</div>
-            <div id="clock"></div>
-        </div>
-        <div class="windowbackgroundarea1">
-            <div id="Subtitle">Have a nice day.</div>
-        </div>
-        <div class="windowbackgroundarea2">
-            <div class="centerDivs">
-                <div class="category">
-                    <div class="categorytitle">Media</div>
-                    <div class="categorycontent"><a href="https://youtube.com/">Youtube</a> - <a
-                            href="https://twitch.tv ">Twitch</a> - <a href="https://floatplane.com ">Floatplane</a> - <a
-                            href="https://app.plex.tv/desktop/#!/">Plex</a></div>
-                    <div class="categorytitle">Torrents</div>
-                    <div class="categorycontent"><a
-                            href="https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC">RARBG</a>
-                        - <a href="https://www.magnetdl.com/download/movies/se/desc/">Magnet</a> - <a
-                            href="http://strumyk.tv">Sports</a></div>
-                    <div class="categorytitle">Reddit</div>
-                    <div class="categorycontent"><a href="https://reddit.com/r/GlobalOffensive">CSGO</a> - <a
-                            href="https://reddit.com/r/RPClipsGTA">GTA</a> - <a
-                            href="https://reddit.com/r/LiveStreamFail">LSF</a></div>
-                    <div class="categorytitle">Stuff</div>
-                    <div class="categorycontent"><a href="https://tweetdeck.com ">Twitter</a> - <a
-                            href="http://192.168.68.103:5000">NAS</a> - <a
-                            href="https://reuters.com/world/uk">Reuters</a> - <a href="https://hltv.org">HLTV</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pixeloverlay"></div>
-    <div class="vignette"></div>
-    <script>
-        var clock = document.getElementById("clock");
-        function updateClock() {
-            var date = new Date();
-            date.setHours(date.getHours() + 0)
-            var hours = date.getHours().toString();
-            var minutes = date.getMinutes().toString();
-            var seconds = date.getSeconds().toString();
-            if (hours.length == 1) {
-                hours = "0" + hours
-            }
-            if (minutes.length == 1) {
-                minutes = "0" + minutes
-            }
-            if (seconds.length == 1) {
-                seconds = "0" + seconds
-            }
-            clock.innerHTML = hours + ":" + minutes + ":" + seconds;
-        }
-        updateClock();
-        setInterval(updateClock, 1000);
-    </script>
-</body>
+  <p><span>user@home &gt; </span>startpage</p>
 
+  <nav>
+    <ul>
+      <li>general</li>
+      <li><a href="https://stpg.tk/">/wg/-/stpg/</a></li>
+      <li><a href="https://www.theonion.com/">news</a></li>
+      <li><a href="https://send.firefox.com/">ff send</a></li>
+    </ul>
+
+    <ul>
+      <li>education</li>
+      <li><a href="https://stpg.tk/">mdn</a></li>
+      <li><a href="https://www.theonion.com/">stack overflow</a></li>
+    </ul>
+
+    <ul>
+      <li>home</li>
+      <li><a href="https://stpg.tk/">rent portal</a></li>
+      <li><a href="https://www.theonion.com/">shopping list</a></li>
+      <li><a href="https://send.firefox.com/">goals</a></li>
+    </ul>
+
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+    <ul>
+      <li>misc.</li>
+      <li><a href="https://stpg.tk/">moosic</a></li>
+      <li><a href="https://www.theonion.com/">deluge web</a></li>
+    </ul>
+  </nav>
+
+  <p><span>user@home &gt; </span> <span id="cursor">_</span></p>
+</body>
 </html>
