@@ -24,8 +24,7 @@ def parseContents(contents):
 
 def createHTML(data):
     with open("index.html", 'w') as file:
-        page = '''
-<!DOCTYPE html>
+        page = '''<!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
 <title>'''+title+'''</title>
