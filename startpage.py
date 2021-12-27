@@ -30,6 +30,7 @@ def createHTML(data):
 <title>'''+title+'''</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="main.css">
+<script src="script.js"></script></script>
 
 <body>
     <p><span>'''+main+'''</span><a href="https://app.netlify.com/sites/mussejusse/overview">startpage</a></p>
@@ -46,12 +47,6 @@ def createHTML(data):
 
     <p><span>'''+main+'''</span> <span id="cursor">_</span></p>
 </body>
-
-<script>
-    var randomColour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-    document.documentElement.style.setProperty('--bgcolour', randomColour);
-</script>
-
 </html>'''
         file.write(page)
 
