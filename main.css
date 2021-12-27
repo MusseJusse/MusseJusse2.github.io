@@ -34,7 +34,6 @@ p {
 }
 
 p span {
-    /* color: #b5bd68; */
     color: var(--bgcolour1);
 }
 
@@ -62,27 +61,22 @@ nav {
 }
 
 ul:nth-child(5n + 1) li:first-child {
-    /* color: #a54242; */
     color: var(--bgcolour2)
 }
 
 ul:nth-child(5n + 2) li:first-child {
-    /* color: #de935f; */
     color: var(--bgcolour3)
 }
 
 ul:nth-child(5n + 3) li:first-child {
-    /* color: #f0c674; */
     color: var(--bgcolour4)
 }
 
 ul:nth-child(5n + 4) li:first-child {
-    /* color: #8c9440; */
     color: var(--bgcolour5)
 }
 
 ul:nth-child(5n + 5) li:first-child {
-    /* color: #85678f; */
     color: var(--bgcolour6)
 }
 
