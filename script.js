@@ -1,24 +1,24 @@
 var colours = new Array(6);
 
-function getHSLAColor(h, s, l, a) {
+function getHSLAColour(h, s, l, a) {
     return `hsl(${h}, ${s}%, ${l}%, ${a})`;
 }
 
-function getColor(h) {
+function getColour(h) {
     var s = 70;
     var l = 80;
     var a = 1;
 
     return {
         h,
-        hslaValue: getHSLAColor(h, s, l, a)
+        hslaValue: getHSLAColour(h, s, l, a)
     }
 }
 
-colours[0] = getColor(360 * Math.random());
+colours[0] = getColour(360 * Math.random());
 
 for (let i = 1; i < colours.length; i++) {
-    colours[i] = getColor(colours[i - 1].h - 60, 70, 80, 1);
+    colours[i] = getColour(colours[i - 1].h - 60, 70, 80, 1);
 }
 
 document.documentElement.style.setProperty('--bgcolour1', colours[0].hslaValue);
