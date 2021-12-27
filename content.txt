@@ -11,7 +11,8 @@ sport | http://strumyk.tv
 
 social
 twitter | https://tweetdeck.com
-github | https://github.com
+hltv | https://hltv.org
+vlr | https://vlr.gg
 
 reddit
 csgo | https://reddit.com/r/GlobalOffensive
@@ -21,7 +22,7 @@ lsf | https://reddit.com/r/LiveStreamFail
 
 misc
 nas | http://192.168.68.103:5000
-hltv | https://hltv.org
+github | https://github.com
 image | https://yandex.com/images/
 
 news
