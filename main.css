@@ -29,7 +29,8 @@ p {
 }
 
 p span {
-    color: #b5bd68;
+    /* color: #b5bd68; */
+    color: var(--bgcolour);
 }
 
 a {
