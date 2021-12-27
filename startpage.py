@@ -8,7 +8,7 @@ title = main + "startpage"
 
 
 def importContent():
-    with open("content.txt", "r") as file:
+    with open(importPath, "r") as file:
         return file.read()
 
 
@@ -23,7 +23,7 @@ def parseContents(contents):
 
 
 def createHTML(data):
-    with open("index.html", 'w') as file:
+    with open(outputPath, 'w') as file:
         page = '''<!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
