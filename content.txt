@@ -1,0 +1,35 @@
+media
+youtube | https://youtube.com/
+twitch | https://twitch.tv 
+floatplane | https://floatplane.com 
+plex | https://app.plex.tv/desktop/#!/
+
+torrents
+rarbg | https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC
+magnet | https://www.magnetdl.com/download/movies/se/desc/
+sport | http://strumyk.tv
+
+social
+twitter | https://tweetdeck.com
+github | https://github.com
+
+reddit
+csgo | https://reddit.com/r/GlobalOffensive
+gta | https://reddit.com/r/RPClipsGTA
+val | https://reddit.com/r/valorantcompetitive
+lsf | https://reddit.com/r/LiveStreamFail
+
+misc
+nas | http://192.168.68.103:5000
+hltv | https://hltv.org
+image | https://yandex.com/images/
+
+news
+uk | https://reuters.com/world/uk
+us | https://reuters.com/world/us
+tech | https://reuters.com/technology
+
+email
+main | https://mail.google.com/mail/u/0/#inbox
+spam | https://mail.google.com/mail/u/1/#inbox
+work | https://mail.google.com/mail/u/2/#inbox
