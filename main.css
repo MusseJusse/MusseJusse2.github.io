@@ -35,6 +35,7 @@ p {
 
 p span {
     color: var(--bgcolour1);
+    font-weight: bold;
 }
 
 a {
