@@ -1,5 +1,3 @@
-var colours = new Array(6);
-
 function search_func(e) {
     e = e || window.event;
     if (e.keyCode == 13) {
@@ -9,9 +7,11 @@ function search_func(e) {
     return true;
 }
 
-window.onload = function() {
+window.onload = function () {
     document.getElementById("search").focus();
-  };
+};
+
+var colours = new Array(6);
 
 function getHSLAColour(h, s, l, a) {
     return `hsl(${h}, ${s}%, ${l}%, ${a})`;

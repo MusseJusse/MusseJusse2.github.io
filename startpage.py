@@ -45,7 +45,12 @@ def createHTML(data):
             page += '        </ul>\n\n'
         page += '''    </nav>
 
-    <p><span>'''+main+'''</span> <span id="cursor">_</span></p>
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+        <p><span>'''+main+'''</span>
+            <input id="search" autocomplete="off" class="input" name="q" placeholder="" required="required"
+                type="text"><button class="button" type="submit" autofocus></button>
+        </p>
+    </form>
 </body>
 
 </html>'''
