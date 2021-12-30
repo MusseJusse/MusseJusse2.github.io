@@ -89,7 +89,21 @@ li:last-child {
     margin: 0 0 1em;
 }
 
+input {
+    overflow: hidden;
+    border: hidden;
+    background-color: #1d1f21;
+    outline: none;
+    color: #c5c8c6;
+    font: 22px/1 "Inconsolata", monospace;  
+}
+
+button {
+    visibility: hidden;
+}
+
 p #cursor {
+    /* position: absolute; */
     background-color: #c5c8c6;
     animation: blink 2s infinite;
 }

@@ -1,5 +1,18 @@
 var colours = new Array(6);
 
+function search_func(e) {
+    e = e || window.event;
+    if (e.keyCode == 13) {
+        document.getElementById('button').click();
+        return false;
+    }
+    return true;
+}
+
+window.onload = function() {
+    document.getElementById("search").focus();
+  };
+
 function getHSLAColour(h, s, l, a) {
     return `hsl(${h}, ${s}%, ${l}%, ${a})`;
 }
