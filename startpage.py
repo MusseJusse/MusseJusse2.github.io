@@ -47,6 +47,7 @@ def createHTML(data):
 
     <p><span>'''+main+'''</span> <span id="cursor">_</span></p>
 </body>
+
 </html>'''
         file.write(page)
 
