@@ -5,7 +5,7 @@ floatplane | https://floatplane.com
 plex | https://app.plex.tv/desktop/#!/
 
 torrents
-rarbg | https://rarbgget.org/torrents.php?category=54;41&search=&order=seeders&by=DESC
+rarbg | https://rarbg.to/torrents.php?category=54;41&search=&order=seeders&by=DESC
 magnet | https://www.magnetdl.com/download/movies/se/desc/
 sport | http://strumyk.tv
 
