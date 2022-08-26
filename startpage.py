@@ -1,7 +1,7 @@
 import re
 
-importPath = r"C:\\Users\\Musse\\Documents\\Github\\MusseJusse2.github.io\\content.txt"
-outputPath = r"C:\\Users\\Musse\\Documents\\Github\\MusseJusse2.github.io\\index.html"
+importPath = r"C:\\Users\\Musse\\Documents\\Projs\\MusseJusse2.github.io\\content.txt"
+outputPath = r"C:\\Users\\Musse\\Documents\\Projs\\MusseJusse2.github.io\\index.html"
 user = "musse"
 main = user + "@home &gt; "
 title = main + "startpage"

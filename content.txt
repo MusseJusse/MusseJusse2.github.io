@@ -34,3 +34,7 @@ email
 main | https://mail.google.com/mail/u/0/#inbox
 spam | https://mail.google.com/mail/u/1/#inbox
 work | https://mail.google.com/mail/u/2/#inbox
+
+uni
+timetable | https://timetable.bournemouth.ac.uk/Student/Index
+brightspace | https://brightspace.bournemouth.ac.uk/d2l/home
