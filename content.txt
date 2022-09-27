@@ -38,3 +38,4 @@ work | https://mail.google.com/mail/u/2/#inbox
 uni
 timetable | https://timetable.bournemouth.ac.uk/Student/Index
 brightspace | https://brightspace.bournemouth.ac.uk/d2l/home
+study progress | https://cispr.bournemouth.ac.uk/study-progress/submit?al=VEdWMlpXd2dOZz09
